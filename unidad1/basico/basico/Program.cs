@@ -11,7 +11,11 @@ namespace basico
     {
         static void Main(string[] args)
         {
-            Tipos01 t01 = new Tipos01();
+            //Tipos01 t01 = new Tipos01("Hola buenas noches");
+            //Tipos01 t02 = new Tipos01("Hola buenas tardes");
+            //Tipos01 t03 = new Tipos01("Hola buenos dias");
+            Tipos02 tipos02 = new Tipos02();
+            Console.ReadKey();
         }
     }
 }
