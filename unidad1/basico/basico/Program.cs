@@ -20,7 +20,13 @@ namespace basico
 
             //CondicionIf condicionif = new CondicionIf();
 
-            Promedio prom = new Promedio();
+            //Promedio prom = new Promedio();
+
+            //Vocales vocales = new Vocales();
+
+            //ListarNumeros01 lista = new ListarNumeros01();
+
+            ListarNumeros02 listar= new ListarNumeros02();
             
             Console.ReadKey();
         }
