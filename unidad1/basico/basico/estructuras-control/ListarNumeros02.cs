@@ -27,6 +27,7 @@ namespace basico.estructuras_control
                     Console.WriteLine("----------------------");
                     Console.Write("Desea Continuar: ");
                     desicion = Console.ReadLine()[0];
+
                     if (desicion == 's')
                     {
                         Console.Write("Ingresar numeros hasta: ");

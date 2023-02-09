@@ -26,8 +26,11 @@ namespace basico
 
             //ListarNumeros01 lista = new ListarNumeros01();
 
-            ListarNumeros02 listar= new ListarNumeros02();
-            
+
+            //ListarNumeros03 listar = new ListarNumeros03();
+
+            //ListarNumeros04 listar = new ListarNumeros04();
+            ListarNumeros05 listar = new ListarNumeros05();
             Console.ReadKey();
         }
     }
