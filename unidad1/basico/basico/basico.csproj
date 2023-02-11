@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="arreglos\Arreglo02.cs" />
     <Compile Include="arreglos\Arreglo01.cs" />
+    <Compile Include="arreglos\Arreglo03.cs" />
     <Compile Include="estructuras-control\CondicionIf.cs" />
     <Compile Include="estructuras-control\ListarNumeros01.cs" />
     <Compile Include="estructuras-control\ListarNumeros02.cs" />

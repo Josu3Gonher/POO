@@ -11,20 +11,50 @@ namespace EjerciciosTarea1
     {
         static void Main(string[] args)
         {
-            //IncisoA incisoA = new IncisoA();
+            Console.Write("Que ejercicio desea ejecutar 1-11: ");
+            int eleccion = int.Parse(Console.ReadLine());
+            Console.WriteLine("");
+
+            switch (eleccion)
+            {
+                case 1:
+                    IncisoA incisoA = new IncisoA();
+                    break;
+                case 2:
+                    IncisoB incisoB = new IncisoB();
+                    break;
+                case 3:
+                    IncisoC incisoC = new IncisoC();
+                    break;
+                case 4:
+                    IncisoD incisoD = new IncisoD();
+                    break;
+                case 5:
+                    IncisoE incisoE = new IncisoE();
+                    break;
+                case 6:
+                    IncisoF incisoF = new IncisoF();
+                    break;
+                case 7:
+                    IncisoG incisoG = new IncisoG();
+                    break;
+                case 8:
+                    IncisoH incisoH = new IncisoH();
+                    break;
+                case 9:
+                    IncisoI incisoI = new IncisoI();
+                    break;
+                case 10:
+                    IncisoJ incisoJ = new IncisoJ();
+                    break;
+                case 11:
+                    IncisoK incisoK = new IncisoK();
+                    break;
+                default:
+                    Console.WriteLine("Numero ingresado invalido");
+                    break;
+            }
             
-            //IncisoB incisoB = new IncisoB();
-
-            //IncisoC incisoC = new IncisoC();
-
-            //IncisoD incisoD = new IncisoD();
-            //IncisoE incisoE = new IncisoE();
-            //IncisoF incisoF = new IncisoF();
-            //IncisoG incisoG = new IncisoG();
-            //IncisoH incisoH = new IncisoH();
-            //IncisoI incisoI = new IncisoI();
-            //IncisoJ incisoJ = new IncisoJ();
-            IncisoK incisoK = new IncisoK();
             Console.ReadKey();
         }
     }

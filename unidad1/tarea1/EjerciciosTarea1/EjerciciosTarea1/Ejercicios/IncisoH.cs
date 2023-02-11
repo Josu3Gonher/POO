@@ -17,7 +17,7 @@ namespace EjerciciosTarea1.Ejercicios
             Console.Write("Ingrese el numero a calcular el factorial: ");
             int numero = int.Parse(Console.ReadLine());
 
-            int resultado = 1;
+            long resultado = 1;
             for (int i = 1; i <= numero; i++)
             {
                 resultado = resultado * i;
