@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EjemploForo.cs" />
     <Compile Include="Ejercicios\IncisoA.cs" />
     <Compile Include="Ejercicios\IncisoB.cs" />
     <Compile Include="Ejercicios\IncisoC.cs" />
