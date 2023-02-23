@@ -259,6 +259,7 @@
         <label class="form-label">Correo Electronico</label>
         <input type="email" name="" class="form-control" placeholder="Ingrese su correo" />
     </div>
+
     <div class="mb-3">
         <label class="form-label">Descripcion</label>
         <textarea class="form-control"></textarea>
@@ -283,11 +284,82 @@
         <label class="form-label">Es mujer</label>
         <input type="radio" name="Genero" value="F" class="form-check-input" />
     </div>
+
     <div class="mb-3">
         <label class="form-label">Es hombre</label>
         <input type="radio" name="Genero" value="M"  class="form-check-input" />
     </div>
+     <div class="mb-3">
+         <label class="form-label">Correo Electronico</label>
+         <input type="email" name="correo" class="form-control" placeholder="Ingrese su correo" disabled/>
+     </div>
+    
+    <div class="mb-3">
+        <input type="email" name="correo" class="form-control" placeholder="Correo Electronico" />
+        <label class="form-label form-floating">Correo Electronico</label>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">contraseña</label>
+        <input type="password" name="" class="form-control" placeholder="Ingrese su contraseña" />
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">color de camisa</label>
+    <input type="color" name="color-camisa" class="form-control form-control-color" />
+    </div>
+
+    <div class="mb-3">
+        <button type="button" class="btn btn-primary"> Enviar</button>
+        <input type="submit" class="btn btn-primary"/>
+        <button type="button" class="btn btn-secondary">Cancelar</button>
+    </div>
+</form>
+
+<h2>Ejemplo 15: Formulario en Columnas</h2>
+
+<form class="row">
+    
+</form>
+
+<form class="row">
+    <div class="col">
+        <input type="text" class="form-control" placeholder="Nombres" />
+    </div>
+    <div class="col">
+        <input type="text" class="form-control" placeholder="Apellidos" />
+    </div>
+    <div class="col">
+        <button type="button" class="btn btn-primary"> Enviar </button>
+    </div>
 </form>
 
 
+@*<h2>Ejemplo 16: Alertas</h2>
+<div class="alert alert-success" role="alert">Alerta Exitosa</div>
+<div class="alert alert-danger" role="alert">Alerta Error</div>
+<div class="alert alert-warning" role="alert">Alerta Adventencia</div>
 
+<button class="btn btn-primary" onclick="mostrarAlertaExitosa()">Mostrar Alerta Exitoso</button>
+<button class="btn btn-primary" onclick="mostrarAlertaError()">Mostrar Alerta Error</button>
+
+<div>
+    Las alertas se mostraran aqui
+</div>
+
+<div id="contenedor alertas" ></div>
+
+@section Scripts{
+    <script>
+        function mostrarAlertaExitosa(){
+
+        }
+        function mostrarAlertaError(){
+
+        }
+        function mostrarAlerta(mensaje, tipo) {
+            const alerta = document.createElement('div');
+            alerta.innerHTML = ``;
+        }
+    </script>
+}*@
