@@ -252,7 +252,7 @@
 <div class="vw-100 bg-success">Anchura 100vw</div>
 <div class="vh-100 bg-warning">Altura 100vh</div>*@
 
-<h2>Ejemplo 14: Formularios</h2>
+@*<h2>Ejemplo 14: Formularios</h2>
 
 <form>
     <div class="mb-3">
@@ -332,11 +332,11 @@
     <div class="col">
         <button type="button" class="btn btn-primary"> Enviar </button>
     </div>
-</form>
+</form>*@
 
 
 @*<h2>Ejemplo 16: Alertas</h2>
-<div class="alert alert-success" role="alert">Alerta Exitosa</div>
+@*<div class="alert alert-success" role="alert">Alerta Exitosa</div>
 <div class="alert alert-danger" role="alert">Alerta Error</div>
 <div class="alert alert-warning" role="alert">Alerta Adventencia</div>
 
@@ -347,19 +347,51 @@
     Las alertas se mostraran aqui
 </div>
 
-<div id="contenedor alertas" ></div>
+<div id="contenedor-alertas" ></div>
 
 @section Scripts{
     <script>
         function mostrarAlertaExitosa(){
-
+            mostrarAlerta('Este es un mesaje exitoso', 'success');
         }
         function mostrarAlertaError(){
-
+            mostrarAlerta('Este es un mesaje de error', 'danger');
         }
         function mostrarAlerta(mensaje, tipo) {
             const alerta = document.createElement('div');
-            alerta.innerHTML = ``;
+            alerta.innerHTML = `
+                        <div class="alert alert-${tipo} alert-dismissible fade-show" role="alert">${mensaje}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+            `;
+
+            const contenedorAlerta = document.getElementById('contenedor-alertas');
+            contenedorAlerta.append(alerta);
         }
     </script>
 }*@
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miPrimerModal">Abrir Modal</button>
+
+<div class="modal fade" id="miPrimerModal" tabindex="1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Titulo del Modal</h5>
+                <button type="button" class="btn btn-close" data-bs-toggle="modal" data-bs-target="#miPrimerModal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Este es un formulario pequeño de ejemplos</p>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre: </label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary" data-bs-dismiss="modal">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
