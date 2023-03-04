@@ -1,39 +1,146 @@
-﻿@model Persona 
+﻿@model Persona
 
 @{
     ViewData["Title"] = "Home Page";
-
-    string ConvertirEnMayuscula(string valor)
-    {
-        return valor.ToUpper();
-    }
-
-    DateTime hoy = DateTime.Now;
-
-    var nombres = new List<string>() { "Juan Perez", "Maria Mejia", "Carlos Lopez" };
 }
 
-<div class="text-center">
-   <h1 class="display-4">Soy @ConvertirEnMayuscula(Model.Nombre) (@Model.Edad)</h1>
-   
-   <h4>@hoy.ToString("dd/MM/yyyy hh:mm:ss tt")</h4>
-   
-   <h2>Soy un Estudiante de la carrera de la carrera de ingenieria en Sistemas y actualente estoy cursando la clase de Programacion Orientada a Objetos</h2>
-   @if(Model.Edad >= 21)
-    {
-        <h5>Eres mayor de edad</h5>
-    }else
-    {
-        <h5>Usted esta peor que el que no tiene 21 años</h5>
-    }
+@*Bloque de Presentacion*@
+<div class="text-center mb-3">
+    <h1 class="display-4">Soy Josue Gonzalez</h1>
 
-    <ul>
-        @foreach (var nombre in nombres)
-        {
-         <li>@nombre</li>   
-        }
-    </ul>
 
-   <img class="profile-picture"
-       src="~/images/foto01.jpg" alt="Imagen de perfil"/>
+
+    <h2>Soy un Estudiante de la carrera de la carrera de ingenieria en Sistemas y actualente estoy cursando la clase de Programacion Orientada a Objetos</h2>
+
+
+    <img class="img-fluid w-25 rounded-circle"
+         src="~/images/foto01.jpg" alt="Imagen de perfil" />
 </div>
+
+@*Logo.net*@
+<div class="text-center mb-3">
+    <img class="img-fluid w-25" src="~/images/dotnet-imagen-2.png" />
+</div>
+
+@*Bloque de Bienvenida*@
+<div class="row justify-content-center text-center bg-primary">
+    <div class="col col-md-7 seccion-bienvenida">
+        <h2>Bienvenido a mi Portafolio</h2>
+        <p>
+            Soy una persona amateur en programacion, actualmente manejo los lenguajes de C++, JAVA, C#, HTML, CSS.
+            Me gusta aprender acerca del mundo tecnologico y mas adelante desempeñarme como programador y poder
+            optar por un puesto en una de las grandes empresas como ser microsoft o google e incluso poder aspirar
+
+        </p>
+    </div>
+</div>
+
+@*Bloque Experiencia*@
+<div style="margin-top:-100px;">
+    <div class="row justify-content-center text-center">
+        <div class="col col-3 bg-white experiencia-i habilidades">
+            <i class="bi bi-hdd"></i>
+            <h3>BackEnd</h3>
+            <p>Trabajo desde el desarrollo, pruebas automaticas
+                y puesta en produccion con entrega continua.
+            </p>
+            <p class="text-primary cabecera">Stack</p>
+            <p>Asp.Net Core, SQL Server</p>
+
+            <p class="text-primary cabecera">Experiencia</p>
+            <ul>
+                <li>Web Apis</li>
+                <li>Entity Framework</li>
+                <li>Dapper</li>
+                <li>Queries Especiales</li>
+
+            </ul>
+        </div>
+        <div class="col col-3 bg-white experiencia-d habilidades">
+            <i class="bi bi-code-slash"></i>
+            <h3>FrontEnd</h3>
+            <p>
+                Puedo crear FrontEnds robustos los cuales cumplen con los requisitos del negocio.
+            </p>
+            <p class="text-primary cabecera">Stack</p>
+            <p>Angular, Blazor, VueJs</p>
+
+            <p class="text-primary cabecera">Experiencia</p>
+            <ul>
+                <li>Angular Material</li>
+                <li>Blazor WASM</li>
+                <li>JQuery</li>
+                <li>Pruebas Automaticas</li>
+                <li>Markdown</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+@*listado de Proyectos*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*
+        //    string ConvertirEnMayuscula(string valor)
+//    {
+//        return valor.ToUpper();
+//    }
+
+//    DateTime hoy = DateTime.Now;
+
+//    var nombres = new List<string>() { "Juan Perez", "Maria Mejia", "Carlos Lopez" };
+        @if (Model.Edad >= 21)
+    //{
+    //    <h5>Eres mayor de edad</h5>
+    //}
+    //else
+    //{
+    //    <h5>Usted esta peor que el que no tiene 21 años</h5>
+    //}
+
+    //<ul>
+    //    @foreach (var nombre in nombres)
+    //    {
+    //        <li>@nombre</li>
+    //    }
+    </ul>*@
