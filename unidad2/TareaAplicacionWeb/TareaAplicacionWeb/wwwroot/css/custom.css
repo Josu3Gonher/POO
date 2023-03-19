@@ -1,0 +1,19 @@
+﻿h1 {
+    font-size: 4rem;
+}
+
+/* Estilos para el formulario de agregar tarea */
+form#add-task-form {
+    margin-bottom: 2rem;
+}
+
+/* Estilos para la lista de tareas */
+#task-list {
+    margin-top: 2rem;
+}
+
+/* Estilos para los botones */
+button {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}

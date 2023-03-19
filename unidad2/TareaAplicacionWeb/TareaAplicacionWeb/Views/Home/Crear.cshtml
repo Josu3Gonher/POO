@@ -1,0 +1,24 @@
+﻿<h1>Crear tarea</h1>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <label for="codigo">Codigo:</label>
+        @Html.TextBox("codigo")
+    </div>
+    <div>
+        <label for="titulo">Titulo:</label>
+        @Html.TextBox("titulo")
+    </div>
+    <div>
+        <label for="descripcion">Descripción:</label>
+        @Html.TextBox("descripcion")
+    </div>
+    <div>
+        <label for="fechaVnecimiento">Fecha de Vencimiento:</label>
+        @Html.TextBox("fechaDeVencimiento")
+    </div>
+    <div>
+        <input type="submit" value="Crear tarea" />
+    </div>
+}

@@ -1,0 +1,23 @@
+﻿@model DatosContacto
+
+<h1>Agregar Contacto</h1>
+<form method="post" action="/DatosContacto/AddContacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" required><br><br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" name="telefono" required><br><br>
+
+    <label for="tipoTelefono">Tipo de Teléfono:</label>
+    <select name="tipoTelefono">
+        <option value="Personal">Personal</option>
+        <option value="Trabajo">Trabajo</option>
+        <option value="Casa">Casa</option>
+        <option value="Otro">Otro</option>
+    </select><br><br>
+
+    <a href="@Url.Action("Index", "Home", new{id=DatosContacto.i})></a>
+</form>

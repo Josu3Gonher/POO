@@ -1,0 +1,18 @@
+﻿@model Tarea
+
+@using (Html.BeginForm())
+{
+    <div>
+        <label>Título:</label>
+        @Html.TextBoxFor(model => model.Titulo)
+    </div>
+    <div>
+        <label>Descripción:</label>
+        @Html.TextAreaFor(model => model.Descripcion)
+    </div>
+    <div>
+        <label>Fecha de vencimiento:</label>
+        @Html.TextBoxFor(model => model.FechaVencimiento)
+    </div>
+    <input type="submit" value="Guardar cambios" />
+}

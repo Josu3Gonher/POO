@@ -1,0 +1,44 @@
+﻿@model AgendaTelefonica.Models.HomeViewController
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table tabla-custom">
+    <thead class="cabeza-tabla">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>No. de Telefono</td>
+            <td>Tipo de Telefono</td>
+
+        </tr>
+    </thead>
+    <tbody class="tabla-cuerpo">
+        @foreach (var contacto in Model.Contactos)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelContacto => contacto.Nombre)</td>
+                <td>@Html.DisplayFor(modelContacto => contacto.Apellido)</td>
+                <td>@Html.DisplayFor(modelContacto => contacto.NumeroTelefono)</td>
+                <td>@Html.DisplayFor(modelAlumno => contacto.TipoDeTelefono)</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
+
+
+
+<!-- Contenido principal -->
+@*<div class="container">
+	<h1 class="text-center">Bienvenido a la Agenda Telefónica</h1>
+	<p>Esta es una aplicación web que te permite administrar tus contactos telefónicos de manera eficiente y fácil.</p>
+</div>
+
+<div class="button-row">
+	<a href="@Url.Action("AddContacto", "Home")" class="btn btn-primary">Agregar</a>
+	<a asp-controller="Home" asp-action="Privacy" class="btn btn-primary">Mostrar Contactos</a>
+	<a asp-controller="Home" asp-action="Privacy" class="btn btn-primary">Editar</a>
+</div>*@
