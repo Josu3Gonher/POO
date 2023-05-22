@@ -1,0 +1,37 @@
+﻿@model Alumno
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h3 class="mb-5 titulo-Editar">Datos del Alumno</h3>
+
+<form class="row gap-3" method="post" asp-action="Editar">
+    <div class="row">
+        <div class="col">
+            <label class="form-label personalizar-label">Nombre</label>
+            <input class="form-control personalizar-label" name="Nombre" asp-for="Nombre" readonly />
+        </div>
+        <div class="col">
+            <label class="form-label personalizar-label">Apellido</label>
+            <input class="form-control personalizar-label" name="Apellido" asp-for="Apellido" readonly />
+        </div>
+    </div>
+
+    <div class="row">
+        <label class="form-label editar-checkbox">
+            Asistio a Clases
+            <input type="checkbox" class="form-check-input" name="Asistencia" asp-for="Asistencia" />
+        </label>
+    </div>
+    <div class="row gap-3">
+        <button class="btn btn-primary btn-guardar" type="submit">
+            <img src="~/images/save-button.png" alt="Guardar"/>
+            Guardar
+            </button>
+        <a class="btn btn-danger btn-cancelar" href="/">
+            <img src="~/images/cancel-button.png" alt="Cancelar" />
+            Cancelar
+            </a>
+    </div>
+</form>

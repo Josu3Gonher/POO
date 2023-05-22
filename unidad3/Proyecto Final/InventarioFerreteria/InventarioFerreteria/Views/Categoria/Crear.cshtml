@@ -1,0 +1,29 @@
+﻿@model Categoria
+@{
+    ViewData["Title"] = "Ingresar una nueva categoria";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-controller="Categoria" asp-action="Crear" class="form-edit">
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="categoria.Nombre"></label>
+        <input asp-for="categoria.Nombre" class="form-control" placeholder="Nombre" />
+        <span asp-validation-for="categoria.Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="categoria.Descripcion"></label>
+        <input asp-for="categoria.Descripcion" class="form-control" placeholder="Descripcion" />
+        <span asp-validation-for="categoria.Descripcion" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

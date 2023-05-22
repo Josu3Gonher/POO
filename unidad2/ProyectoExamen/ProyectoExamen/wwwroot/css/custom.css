@@ -1,0 +1,138 @@
+﻿.titulo-custom{
+    font-family: Algerian;
+    font-size: 4rem;
+    color:chartreuse;
+    text-align:center;
+    margin-bottom: 3rem;
+}
+.titulo-custom-1 {
+    font-size: 60px;
+    font-family: 'Book Antiqua';
+    color: #11add0;
+    margin-bottom: 3rem;
+}
+.edit-encabezado{
+    text-align:center;
+}
+
+.tabla-custom {
+    text-align: center;
+}
+
+.cabeza-tabla{
+    background-color:greenyellow;
+    font-size:1.8rem;
+    font-family:'Bernard MT';
+    
+}
+.tabla-cuerpo {
+    background-color: #7ca07e69;
+    font-size: 1.5rem;
+    font-family: 'Cambria Math';
+}
+.btn-guardar {
+    background-color: deepskyblue;
+    font-family: 'Comic Sans MS';
+    border-radius: 2rem;
+    padding: 7px 3px;
+
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+}
+    .btn-guardar:hover {
+     background-color: #5d94e0;
+     color: black;
+    }
+.btn-cancelar {
+    font-family: 'Comic Sans MS';
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    padding: 7px 3px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 2rem;
+}
+    .btn-cancelar:hover {
+        background-color: crimson;
+        color: black;
+    }
+
+.titulo-Editar {
+    text-align: center;
+    color:crimson;
+    font-family:Consolas;
+    font-size: 3rem;
+}
+
+.editar-checkbox{
+    color:black;
+    font-size:1.3rem;
+}
+.personalizar-label{
+    font-size: 1.5rem;
+    font-family: Cambria;
+}
+.btn-modificado{
+    border-radius: 2rem;
+    background-color: dimgrey;
+    font-family: Arial;
+    font-size: 20px;
+}
+.btn-modificado:hover{
+    background-color: #7194709b;
+    color:black;
+}
+.custom-barraNav {
+    background-color: #39ccd0;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 25rem;
+    height: 4rem;
+}
+.edit-integrantes h2{
+    color: red;
+    text-align:center;
+    font-size: 6rem;
+    margin-bottom:3rem;
+    font-family:'Blackadder ITC'
+
+}
+.edit-integrantes {
+    background: #00ff2460;
+    border: 8px solid black;
+    border-radius: 3rem;
+    width: 900px;
+    height: 700px;
+}
+.edit-integrantes p {
+    color: black;
+    font-family:'Cascadia Code';
+    text-align: center;
+    font-size: 2rem;
+}
+.img-sist {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.img-unah {
+    width: 230px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.img-person{
+    text-align:center;
+}
+
+.img-person img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}    

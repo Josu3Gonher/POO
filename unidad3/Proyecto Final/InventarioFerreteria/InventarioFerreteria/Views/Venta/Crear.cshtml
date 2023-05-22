@@ -1,0 +1,46 @@
+﻿@model VentasObtener
+
+@{
+    ViewData["Title"] = "Ingresar una nueva venta de la ferreteria";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-controller="Venta" asp-action="Crear" class="form-edit">
+
+    <div class="mb-3 form-group">
+        <label for="producto">Productos:</label>
+        <select class="form-control" id="producto" asp-for="venta.ProductoId" asp-items="Model.Productos">
+        </select>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="venta.Fecha"></label>
+        <input asp-for="venta.Fecha" class="form-control" placeholder="Fecha" type="datetime-local"/>
+        <span asp-validation-for="venta.Fecha" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="venta.Cantidad"></label>
+        <input asp-for="venta.Cantidad" class="form-control" placeholder="Cantidad" />
+        <span asp-validation-for="venta.Cantidad" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label for="empleado">Empleados:</label>
+        <select class="form-control" id="empleado" asp-for="venta.EmpleadoId" asp-items="Model.Empleados">
+        </select>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label for="cliente">Clientes:</label>
+        <select class="form-control" id="cliente" asp-for="venta.ClienteId" asp-items="Model.Clientes">
+        </select>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

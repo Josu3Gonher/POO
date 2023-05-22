@@ -1,0 +1,106 @@
+﻿/*Toda la cabeza de la barara de navegacion*/
+header {
+    padding: 0px;
+    border-top-color:#d78a49;
+
+}
+
+
+.editar-body {
+    background-color: #c9c9ca;
+
+}
+.div-principal {
+    border-radius: 20px;
+    box-shadow: 0 5px 9px #f1f1f1a0;
+    background-color: #fbee0025;
+}
+
+
+.barraNavegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color: #db8339f7;
+    border-top: 56px solid #ffd800;
+    text-align: center;
+}
+
+/*Estilo para los enlaces*/
+a {
+    color: #ff6a00;
+    text-decoration: double;
+}
+
+ul li a:hover {
+    background-color: #c1c474;
+}
+
+/*p{
+    color:#f10d0d;
+    font-family:Arial;
+    text-align:center;
+    font-size:25px;
+}*/
+
+h1 {
+    font-size: 50px;
+    color: #27c415;
+    font-family: 'Cambria Math';
+    text-align: center;
+}
+
+.custom-barraNav {
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    margin:2rem;
+    height: 1rem;
+}
+
+/* Estilo para las tablas */
+.tablas {
+    border-collapse: separate;
+    text-align: center;
+    width: 100%;
+    border-spacing: 2px;
+    border: 7px solid #032c37;
+    border-radius: 10px;
+    display: inline-table;
+}
+
+    .tablas thead {
+        margin-bottom: 5rem;
+        color: #ff6a00;
+        background-color: #000000;
+        font-family: 'Cascadia Code';
+    }
+
+
+    .tablas tbody {
+        background: #f3f3f3;
+        padding: 8px;
+    }
+
+.table-hover{
+    scrollbar-color:#ee0707;
+}
+
+/*Formularios*/
+.form-edit {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+    .form-edit .form-group {
+        margin-bottom: 2rem;
+    }
+    .form-edit .form-label {
+        font-weight: bold;
+    }
+    .form-edit .form-primary {
+        margin-right: 2rem;
+    }

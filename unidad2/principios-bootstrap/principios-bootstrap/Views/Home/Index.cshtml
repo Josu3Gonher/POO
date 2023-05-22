@@ -23,9 +23,9 @@
     <div class="col-6">Columna 1</div>
     <div class="col-4">Columna 2</div>
     <div class="col">Columna 3</div>
-</div>
+</div>*@
 
-<div class="row">
+@*<div class="row">
     <div class="col">Columna 1</div>
     <div class="col">Columna 2</div>
     <div class="col">Columna 3</div>
@@ -38,11 +38,10 @@
     <div class="col">Columna 10</div>
     <div class="col">Columna 11</div>
     <div class="col">Columna 12</div>
-</div>
+</div>*@
 
-<hr />
 
-<h2>Ejemplo #2</h2>
+@*<h2>Ejemplo #2</h2>
 <div class="row">
     <div class="col-sm-4">Columna 1</div>
     <div class="col-sm-4">Columna 2</div>
@@ -61,9 +60,9 @@
     <div class="col aling-self-start">Columna1</div>
     <div class="col aling-self-center">Columna2</div>
     <div class="col aling-self-end">Columna3</div>
-</div>
+</div>*@
 
-<h4>Ejemplo 4: Offset o salto de columnas</h4>
+@*<h4>Ejemplo 4: Offset o salto de columnas</h4>
 <div class="row">
     <div class="colum-3">Columna 1</div>
     <div class="colum-4 offset-5">Columna 2</div>
@@ -86,9 +85,9 @@
             Columna 2
         </div>
     </div>
-</div>
+</div>*@
 
-<h4>Ejemplo 6: Gutter Vertical</h4>
+@*<h4>Ejemplo 6: Gutter Vertical</h4>
 
     <div class="row gx-sm-0 gx-md-3 g-lg-5 gy-2">
     <div class="colum-6">
@@ -115,7 +114,7 @@
 
 <h4>Ejemplo 7: Gutter Vertical y Horizontal</h4>*@
 
-<h4>Ejemplo 8: trabajar con imagenes en columnas</h4>
+@*<h4>Ejemplo 8: trabajar con imagenes en columnas</h4>
 <div class="row">
     <div class="col-4">
         <img class="img-fluid" alt="Imagen Abstrac" src="https://s32625.pcdn.co/wp-content/uploads/2017/05/what-is-abstract-art-kandinsky.jpg.optimal.jpg" />
@@ -129,17 +128,17 @@
 </div>
 
 <h4>Ejemplo 8: trabajar con imagenes veeticales</h4>
-<div class="row gy-3">
-    <div class="col-sm-4">
+<div class="col gy-3">
+    <div class="col-sm-8">
         <img class="img-fluid" alt="Imagen Abstrac" src="https://s32625.pcdn.co/wp-content/uploads/2017/05/what-is-abstract-art-kandinsky.jpg.optimal.jpg" />
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-8">
         <img class="img-fluid" alt="Imagen Abstrac" src="https://s32625.pcdn.co/wp-content/uploads/2017/05/what-is-abstract-art-kandinsky.jpg.optimal.jpg" />
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-8">
         <img class="img-fluid" alt="Imagen Abstrac" src="https://s32625.pcdn.co/wp-content/uploads/2017/05/what-is-abstract-art-kandinsky.jpg.optimal.jpg" />
     </div>
-</div>
+</div>*@
 
 @*<h4>Ejemplo 9: Imagenes en Thumbnail</h4>
 <img class="img-thumbnail rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/FCMotagua.png" />*@
@@ -168,7 +167,7 @@
 
 @*<h2>Ejemplo 11: Tablas</h2>
 
-<table class="table table-hover table-bordered table-striped table-sm">
+<table class="table  table-bordered table-striped table-sm">
     <thead>
         <tr>
             <td>#</td>
@@ -314,15 +313,12 @@
         <input type="submit" class="btn btn-primary"/>
         <button type="button" class="btn btn-secondary">Cancelar</button>
     </div>
-</form>
+</form>*@
 
-<h2>Ejemplo 15: Formulario en Columnas</h2>
+@*<h2>Ejemplo 15: Formulario en Columnas</h2>*@
 
-<form class="row">
-    
-</form>
 
-<form class="row">
+@*<form class="row">
     <div class="col">
         <input type="text" class="form-control" placeholder="Nombres" />
     </div>
@@ -395,3 +391,60 @@
         </div>
     </div>
 </div>*@
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mi Ferretería</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inventario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="welcome-section">
+    <div class="container">
+        <h1>Bienvenido a nuestro sistema de manejo de inventario</h1>
+        <p>Administre eficientemente los productos de su ferretería</p>
+        <a href="#" class="btn btn-primary">Comenzar</a>
+    </div>
+</section>
+
+<section class="image-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="path/to/image1.jpg" alt="Imagen 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="path/to/image2.jpg" alt="Imagen 2" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="path/to/image3.jpg" alt="Imagen 3" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+

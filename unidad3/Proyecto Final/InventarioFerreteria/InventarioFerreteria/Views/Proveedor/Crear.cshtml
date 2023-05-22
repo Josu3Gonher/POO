@@ -1,0 +1,29 @@
+﻿@model Proveedor
+@{
+    ViewData["Title"] = "Ingresar un nuevo proveedor";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-controller="Proveedor" asp-action="Crear" class="form-edit">
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="proveedor.Nombre"></label>
+        <input asp-for="proveedor.Nombre" class="form-control" placeholder="Nombre" />
+        <span asp-validation-for="proveedor.Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="proveedor.Telefono"></label>
+        <input asp-for="proveedor.Telefono" class="form-control" placeholder="Telefono" />
+        <span asp-validation-for="proveedor.Telefono" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

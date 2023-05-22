@@ -1,0 +1,52 @@
+﻿@model EditarViewModel
+
+@{
+    ViewData["Title"] = "Editar producto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-controller="Productos" asp-action="Editar" class="form-edit">
+    <input asp-for="ProductoId" type="hidden"/>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" placeholder="Nombre" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="Precio"></label>
+        <input asp-for="Precio" class="form-control" placeholder="Precio" />
+        <span asp-validation-for="Precio" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="Marca"></label>
+        <input asp-for="Marca" class="form-control" placeholder="Marca" />
+        <span asp-validation-for="Marca" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="Descripcion"></label>
+        <input asp-for="Descripcion" class="form-control" placeholder="Descripcion" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label for="proveedor">Proveedor:</label>
+        <select class="form-control" id="proveedor" asp-for="ProveedorId" asp-items="Model.Proveedores">
+        </select>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label for="categoria">Categoria:</label>
+        <select class="form-control" id="categoria" asp-for="CategoriaId" asp-items="Model.Categorias">
+        </select>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

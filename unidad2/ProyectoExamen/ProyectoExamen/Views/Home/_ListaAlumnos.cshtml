@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Alumno>
+
+<div class="edit-encabezado">
+    <h1 class="titulo-custom-1" style="display: inline-block;">Listado de Alumnos</h1>
+    <img src="~/images/lista-check.png" alt="CheckList" style="display: inline-block;"/>
+</div>
+
+<table class="table tabla-custom">
+    <thead class="cabeza-tabla">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Asistencia</td>
+        </tr>
+    </thead>
+    <tbody class="tabla-cuerpo">
+        @foreach (var alumno in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelAlumno => alumno.Nombre)</td>
+                <td>@Html.DisplayFor(modelAlumno => alumno.Apellido)</td>
+                <td>
+                    <input type="checkbox" checked="@alumno.Asistencia" disabled="disabled" class="form-check-input" />
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

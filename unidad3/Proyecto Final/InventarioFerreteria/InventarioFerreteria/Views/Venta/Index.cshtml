@@ -1,0 +1,36 @@
+﻿
+@model IEnumerable<VentasObtener>
+
+@{
+    ViewData["Title"] = "Listado de ventas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="mb-3 mt-3">
+    <a asp-action="Crear" class="btn btn-dark"><i class="bi bi-clipboard-check"></i> Nueva Venta</a>
+</div>
+
+<table class="table table-hover tablas">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Fecha</th>
+            <th>Cantidad</th>
+            <th>Empleado</th>
+            <th>Cliente</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var venta in Model)
+        {
+            <tr>
+                <th>@venta.ProductoNombre</th>
+                <td>@venta.Fecha</td>
+                <td>@venta.Cantidad</td>
+                <td>@venta.EmpleadoNombre</td>
+                <td>@venta.ClienteNombre</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,44 @@
+﻿@model CompraViewModel
+
+@{
+    ViewData["Title"] = "Ingresar una nueva compra";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-controller="Compra" asp-action="Crear" class="form-edit">
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="compra.Fecha"></label>
+        <input asp-for="compra.Fecha" class="form-control" placeholder="Fecha" type="datetime-local" />
+        <span asp-validation-for="compra.Fecha" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="compra.Descripcion"></label>
+        <input asp-for="compra.Descripcion" class="form-control" placeholder="Descripcion" />
+        <span asp-validation-for="compra.Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="compra.Cantidad"></label>
+        <input asp-for="compra.Cantidad" class="form-control" placeholder="Cantidad" />
+        <span asp-validation-for="compra.Cantidad" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label for="producto">Productos:</label>
+        <select class="form-control" id="producto" asp-for="compra.ProductoId" asp-items="Model.Productos">
+        </select>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label for="proveedor">Proveedor:</label>
+        <select class="form-control" id="proveedor" asp-for="compra.ProveedorId" asp-items="Model.Proveedores">
+        </select>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -1,0 +1,36 @@
+﻿@model EmpleadoViewModel
+
+@{
+    ViewData["Title"] = "Ingresar un nuevo empleado";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-controller="Empleados" asp-action="Crear" class="form-edit">
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="Empleado.Nombre"></label>
+        <input asp-for="Empleado.Nombre" class="form-control" placeholder="Empleado" />
+        <span asp-validation-for="Empleado.Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="Empleado.CodigoEmpleado"></label>
+        <input asp-for="Empleado.CodigoEmpleado" class="form-control" placeholder="Codigo" />
+        <span asp-validation-for="Empleado.CodigoEmpleado" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label class="form-label" asp-for="Empleado.Cargo"></label>
+        <input asp-for="Empleado.Cargo" class="form-control" placeholder="Cargo" />
+        <span asp-validation-for="Empleado.Cargo" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
